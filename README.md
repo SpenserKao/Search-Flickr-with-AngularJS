@@ -40,7 +40,7 @@ Especially the latter demands much securer "https" protocol, hence we have to ma
 onto two above mentioned URLs accordingly to [3] and [4] respectively.
 
 ## Referring to a JSON Flickr Feed
-<img href="aJsonFlickrFeed.jpg"/>
+![a sample of JSON Flickr Feed](aJsonFlickrFeed.jpg "a sample of JSON Flickr Feed")
 As screenshot illustrated above, following properties of each image object item have been referred:
    - title
    - link - points to underlying image of original size 
@@ -52,7 +52,8 @@ As screenshot illustrated above, following properties of each image object item 
    - Make the limit of number of image objects configurable. (Currently the limit is default to 20.)
 
 # Reference
-[1] http://api.flickr.com/services/feeds/photos_public.gne
-[2] http://code.angularjs.org/1.2.0/angular.js
-[3] https://api.flickr.com/services/feeds/photos_public.gne
-[4] https://code.angularjs.org/1.2.0/angular.js
+[1] http://api.flickr.com/services/feeds/photos_public.gne <br/>
+[2] http://code.angularjs.org/1.2.0/angular.js <br/>
+[3] https://api.flickr.com/services/feeds/photos_public.gne <br/>
+[4] https://code.angularjs.org/1.2.0/angular.js <br/>
+<br/>
