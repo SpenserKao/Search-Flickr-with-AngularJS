@@ -40,8 +40,8 @@ Especially the latter demands much securer "https" protocol, hence we have to ma
 onto two above mentioned URLs accordingly to [3] and [4] respectively.
 
 ## Referring to a JSON Flickr Feed
-![a sample of JSON Flickr Feed](aJsonFlickrFeed.jpg "a sample of JSON Flickr Feed")
-As screenshot illustrated above, following properties of each image object item have been referred:
+![a sample of JSON Flickr Feed](aJsonFlickrFeed.jpg "a sample of JSON Flickr Feed") <br/>
+As screenshot illustrated above, following properties of each image object item of a received JSON Flickr feed [5] have been utilised:
    - title
    - link - points to underlying image of original size 
    - media - whose m property containing smaller size image is uded to form thumbnail of images
@@ -56,4 +56,4 @@ As screenshot illustrated above, following properties of each image object item 
 [2] http://code.angularjs.org/1.2.0/angular.js <br/>
 [3] https://api.flickr.com/services/feeds/photos_public.gne <br/>
 [4] https://code.angularjs.org/1.2.0/angular.js <br/>
-<br/>
+[5] https://www.sitepoint.com/load-flickr-photos-using-jsonapi/
