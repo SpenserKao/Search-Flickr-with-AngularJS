@@ -4,19 +4,33 @@
     <meta charset="utf-8">
     <title>Search Flickr with AngularJS - CodePen</title>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
-	<script src="http://code.angularjs.org/1.2.0/angular.js"></script>
+	<script src="https://code.angularjs.org/1.2.0/angular.js"></script>
 	<script src="app.js"></script>		
   </head>
   <body>
 	<section class="row" ng-app="formFlickr" ng-controller="FlickrController">	<!-- HTML5-specific element -->
 	  <div  ng-show="showSelectedImage">
-		<h1>Selected Image in Origianl Size</h1>
-		<p>title: {{title}}</p>
-		<p>author: {{author}}</p>
-		<p>tags: {{tags}}</p>			
-		<img src="{{image}}"/>
+		<h1>More details of selected image</h1>
+		<table>
+		 <tr>
+		   <th>Title</th>
+		   <td>{{title}}</td>
+		 </tr>
+		 <tr>
+		   <th>Author</th>
+		   <td>{{author}}</td>
+		 </tr>
+		 <tr>
+		   <th>Tags</th>
+		   <td>{{tags}}</td>
+		 </tr>
+		 <tr>
+		   <th>Link to image of oringinal size. (Right-click to open in new tab)</th>
+		   <td><a href="{{image}}">{{title}}</a></td>
+		 </tr>
+		</table> 
 	 </div>
-	  <h1>Search Images with Flickr API</h1>
+	  <h1>Search images with Flickr API</h1>
 	  <!-- HTML5-specific element -->
 		<article class="col-md-push-1 col-md-11">	
 			<div class="app-container">
@@ -33,6 +47,7 @@
 						 type="text"
 						 title="required input"
 						 placeholder="Enter key words (tags) separated by a comma."
+						 ng-keyup="search(searchCriteria);document.getElementsByName('tags').focus();"
 						 required />
 				  <br />
 				  Search Mode:
