@@ -44,7 +44,7 @@ onto two above mentioned URLs accordingly to [3] and [4] respectively.
 As screenshot illustrated above, following properties of each image object item of a received JSON Flickr feed [5] have been utilised:
    - title
    - link - points to underlying image of original size 
-   - media - whose m property containing smaller size image is uded to form thumbnail of images
+   - media - whose m property containing smaller size image is used to form thumbnail of images
    - author
    - tags
 
