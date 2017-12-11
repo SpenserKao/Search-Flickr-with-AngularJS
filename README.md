@@ -31,16 +31,28 @@ Following properties have been used:
    - -ms-transition	
    - -o-transition	
 
-# Change of Protocal HTTP to HTTPS
+# Technical note
+## Change of Protocal HTTP to HTTPS
 When the application was opened directly by web browsers, such as Firefox and Google Chrome, 
 the URLs of FlickrAPI[1] and referenced AngularJS lbrary [2] has no pronblem staying with "http" 
 protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr. 
 Especially the latter demands much securer "https" protocol, hence we have to make such change 
-onto two above mentioned URLs accordingly to [3] and [4] respectively.<br/>
-[1] http://api.flickr.com/services/feeds/photos_public.gne <br/>
-[2] http://code.angularjs.org/1.2.0/angular.js <br/>
-[3] https://api.flickr.com/services/feeds/photos_public.gne <br/>
-[4] https://code.angularjs.org/1.2.0/angular.js
+onto two above mentioned URLs accordingly to [3] and [4] respectively.
+
+## Referring to a JSON Flickr Feed
+<img href="aJsonFlickrFeed.jpg"/>
+As screenshot illustrated above, following properties of each image object item have been referred:
+   - title
+   - link - points to underlying image of original size 
+   - media - whose m property containing smaller size image is uded to form thumbnail of images
+   - author
+   - tags
 
 # ToDos
    - Make the limit of number of image objects configurable. (Currently the limit is default to 20.)
+
+# Reference
+[1] http://api.flickr.com/services/feeds/photos_public.gne
+[2] http://code.angularjs.org/1.2.0/angular.js
+[3] https://api.flickr.com/services/feeds/photos_public.gne
+[4] https://code.angularjs.org/1.2.0/angular.js
