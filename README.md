@@ -36,7 +36,7 @@ When the application was opened directly by web browsers, such as Firefox and Go
 the URLs of FlickrAPI[1] and referenced AngularJS lbrary [2] has no pronblem staying with "http" 
 protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr. 
 Especially the latter demands much securer "https" protocol, hence we have to make such change 
-onto two above mentioned URLs accordingly to [3] and [4] respectively.
+onto two above mentioned URLs accordingly to [3] and [4] respectively.<br/>
 [1] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [2] http://code.angularjs.org/1.2.0/angular.js <br/>
 [3] https://api.flickr.com/services/feeds/photos_public.gne <br/>
