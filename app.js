@@ -1,7 +1,5 @@
-(function (angular) {
-  'use strict';
-angular.module('formFlickr', [])
-    .controller('FlickrController', ['$scope', '$http', function ($scope, $http) {
+var appFlickrAPI = angular.module('formFlickr', []);
+appFlickrAPI.controller('FlickrController', ['$scope', '$http', function ($scope, $http) {
 	$scope.showSelectedImage = false;
 	
 	$scope.master = {};
@@ -18,7 +16,7 @@ angular.module('formFlickr', [])
 	$scope.form.tags.$setValidity();
 
 	// URL for Flickr API
-	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne";
+	var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne";
 
 	flickrAPI = flickrAPI + "?jsoncallback=JSON_CALLBACK"
 	  + "&tags=" + encodeURIComponent($scope.searchCriteria.tags)
@@ -57,9 +55,7 @@ angular.module('formFlickr', [])
 		 $scope.title = i.title;
 		 $scope.author = i.author;
 		 $scope.tags = i.tags;
-		 $scope.image = i.media.m;
-	}
+		 $scope.image = i.link;
+	};
 		
-	}]);
-	
-})(window.angular);
+}]);
