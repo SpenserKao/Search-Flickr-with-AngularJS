@@ -49,8 +49,9 @@ As screenshot illustrated above, following properties of each image object item 
    - tags
 
 # ToDos
-   - Make the limit of number of image objects configurable. (Currently the limit is default to 20.)
-   - Move current optionally displayed "More details of selected image" area from top of page to the left, with thumbnail area on the right, hopefully achieving better user experience. 
+| item | Description | Implemented? (Y/N) |
+|1| Make the limit of number of image objects configurable. (Currently the limit is default to 20.) | N |
+|2| Move current optionally displayed "More details of selected image" area from top of page to the left, with thumbnail area on the right, hopefully achieving better user experience.| Y | 
 
 # Reference
 [1] http://api.flickr.com/services/feeds/photos_public.gne <br/>
