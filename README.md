@@ -48,7 +48,7 @@ As screenshot illustrated above, following properties of each image object item 
    - author
    - tags
 
-# ToDos
+# ToDo
 | item | Description | Implemented? (Y/N) |
 | ---:|:-------------|:-----:|
 |1| Make the limit of number of image objects configurable. (Currently the limit is default to 20.) | N |
