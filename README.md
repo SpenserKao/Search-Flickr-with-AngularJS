@@ -63,8 +63,8 @@ As screenshot illustrated above, following properties of each image object item 
 |2| Move current optionally displayed "More details of selected image" area from top of page to the right of tags input area, hopefully achieving better user experience.| Y | 
 
 # Reference
-[1] https://run.plnkr.co/plunks/DOdGfl/
-[2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS
+[1] https://run.plnkr.co/plunks/DOdGfl/ <br/>
+[2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
 [3] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [4] http://code.angularjs.org/1.2.0/angular.js <br/>
 [5] https://api.flickr.com/services/feeds/photos_public.gne <br/>
