@@ -9,7 +9,7 @@ A public Plunk URL [1] has been created for direct execution.
 
 ## Indirectly through source codes
 Extract the package zip file from [2] into a working directory.
-Then open index.html with a web browsers. 
+Then open index.html with a web browser. 
 
 # Supported web browsers
 The application has been tested with following browsers with side-effect:
