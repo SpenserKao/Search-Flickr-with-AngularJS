@@ -1,5 +1,5 @@
 # Search Flickr with AngularJS
-An Application to Search Flickr with AngularJS as user interface vuilding tool.
+An Application to Search Flickr with AngularJS as user interface building tool.
 
 # Execution
 Two ways to execute the application.
@@ -13,8 +13,8 @@ Then open index.html with a web browser.
 
 # Supported web browsers
 The application has been tested with following browsers with side-effect:
-Google Chrome: ver 62.0.3202.94 (64-bit)
-Firefox: ver 57.0 (32-bit)
+   - Google Chrome, ver 62.0.3202.94 (64-bit)
+   - Firefox, ver 57.0 (32-bit)
 
 # Technologies in use
 
@@ -30,7 +30,7 @@ Following semantic HTML5 elements have been in use:
    - figure
 
 ## CSS3 
-Following properties have been used:
+Following CSS3 properties have been used:
    - border-radius
    - box-shadow
    - transition
