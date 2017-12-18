@@ -17,7 +17,7 @@ The application has been tested with following browsers with side-effect:
    - Firefox, ver 57.0 (32-bit)
 
 # Technologies in use
-AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, while AngularJS implements model and controller.
+AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, and AngularJS implements model and controller.
  
 ## AngularJS
 Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
