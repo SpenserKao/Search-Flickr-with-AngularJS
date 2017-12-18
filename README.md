@@ -20,7 +20,7 @@ Firefox: ver 57.0 (32-bit)
 
 ## AngularJS
 Angular JS ver 1.2.0 has be utilised in this application, noteworthily:
-   - ng-show - makes conditional display of selected image's details 
+   - ng-show - enables conditional display of selected image's details 
    - ng-keyup - facilitates real-time search
 
 ## HTML5
