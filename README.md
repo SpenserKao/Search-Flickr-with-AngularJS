@@ -17,11 +17,14 @@ The application has been tested with following browsers with side-effect:
    - Firefox, ver 57.0 (32-bit)
 
 # Technologies in use
-
+AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, while AngularJS implements model and controller.
+ 
 ## AngularJS
-Angular JS ver 1.2.0 has be utilised in this application, noteworthily:
+Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
    - ng-show - enables conditional display of selected image's details 
    - ng-keyup - facilitates real-time search
+   - ng-repeat - implements images thumbnail
+   - ng-model - binds view into model required by an input that specifies keywords (tags) for search
 
 ## HTML5
 Following semantic HTML5 elements have been in use:
