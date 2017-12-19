@@ -67,7 +67,7 @@ As screenshot illustrated above, following properties of each image object item 
 |3| Whenever keywords/tags input area's content is adjusted, previously exhibited "More details of selected image" area should be unexhibited.| Y |
 
 # Reference
-[1] https://run.plnkr.co/plunks/DOdGfl/ <br/>
+[1] https://run.plnkr.co/plunks/X0656z/ <br/>
 [2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
 [3] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [4] http://code.angularjs.org/1.2.0/angular.js <br/>
