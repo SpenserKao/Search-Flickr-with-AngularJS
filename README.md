@@ -45,9 +45,9 @@ Following CSS3 properties have been used:
 # Technical note
 ## Change of Protocal HTTP to HTTPS
 When the application was opened directly by web browsers, such as Firefox and Google Chrome, 
-the URLs of FlickrAPI[3] and referenced AngularJS lbrary [4] has no pronblem staying with "http" 
+the URLs of FlickrAPI[3] and referenced AngularJS lbrary [4] have no pronblem staying with "http" 
 protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, 
-especially the latter demands much securer "https" protocol. Hence we have to actuate such change 
+especially the latter demands much securer "https" protocol, we have to actuate such change 
 onto two above mentioned URLs accordingly, resulting in [5] and [6] respectively.
 
 ## Referring to a JSON Flickr Feed
