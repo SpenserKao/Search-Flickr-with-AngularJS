@@ -64,7 +64,7 @@ As screenshot illustrated above, following properties of each image object item 
 | ---:|:-------------|:-----:|
 |1| Make the limit of number of image objects configurable. (Currently the limit is default to 20.) | N |
 |2| Move current optionally displayed "More details of selected image" area from top of page to the right of tags input area, hopefully achieving better user experience.| Y | 
-[3] Whenever keywords/tags input area's content is adjusted, previously exhibited "More details of selected image" area should be unexhibited.| Y |
+|3| Whenever keywords/tags input area's content is adjusted, previously exhibited "More details of selected image" area should be unexhibited.| Y |
 
 # Reference
 [1] https://run.plnkr.co/plunks/DOdGfl/ <br/>
