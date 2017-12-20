@@ -12,7 +12,7 @@ Extract the package zip file from [2] into a working directory.
 Then open index.html with a web browser. 
 
 # Supported web browsers
-The application has been tested with following browsers with side-effect:
+The application has been tested with following browsers without side-effect:
    - Google Chrome, ver 62.0.3202.94 (64-bit)
    - Firefox, ver 57.0 (32-bit)
 
