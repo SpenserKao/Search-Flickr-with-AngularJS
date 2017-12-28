@@ -1,0 +1,28 @@
+{
+	"releasenote": [
+		{
+			"ver": "0.1.0",
+			"desc": "first draft."
+		},
+		{
+			"ver": "0.1.1",
+			"desc": "moved area of more details of selected image to the right of keyword(tags) input area."
+		},
+		{
+			"ver": "1.0.0",
+			"desc": "implemented real-time search function with ng-keyup directive."
+		},
+		{
+			"ver": "1.1.0",
+			"desc": "once starting adjusting content of keys(tags) input area, area of more tails of selected image will be inexhibited."
+		},
+		{
+			"ver": "1.2.0",
+			"desc": "added about info, release note and todo list."
+		},
+		{
+			"ver": "1.2.1",
+			"desc": "adjusted padding space of table cellss."
+		}			
+	]
+}

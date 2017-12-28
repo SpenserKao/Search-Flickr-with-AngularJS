@@ -1,0 +1,5 @@
+{
+	"todos": [
+		"Make the limit of number of image objects configurable. (Currently the limit is 20 as default.)"
+	]
+}
