@@ -23,6 +23,10 @@
 		{
 			"ver": "1.2.1",
 			"desc": "adjusted padding space of table cellss."
-		}			
+		},
+		{
+			"ver": "1.2.2",
+			"desc": "made height of area shated by release note, todo list and more details of selected image adjustable."
+		}				
 	]
 }
