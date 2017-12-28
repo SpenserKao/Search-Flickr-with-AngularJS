@@ -4,13 +4,6 @@ An Application to Search Flickr with AngularJS as user interface building tool.
 # Execution
 The application currently is hosted by Plunkr, and a public Plunk URL [1] has been created for direct execution.
 
-## Directly at Plunkr
-A public Plunk URL [1] has been created for direct execution.
-
-## Indirectly through source codes
-Extract the package zip file from [2] into a working directory.
-Then open index.html with a web browser. 
-
 # Supported web browsers
 The application has been tested with following browsers with side-effect:
    - Google Chrome, ver 62.0.3202.94 (64-bit)
