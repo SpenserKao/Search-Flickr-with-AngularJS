@@ -132,10 +132,33 @@ table {
 }
 
 table, td, th {
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 
 th {
 	width: 250px;
-	style: "text-align:right";
+	text-align: right;
+}
+
+td {
+	padding: 3px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.aParent div {
+    float: left;
+    clear: none; 
+}
+
+.container {
+    display: flex;
 }
