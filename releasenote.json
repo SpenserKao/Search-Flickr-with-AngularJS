@@ -18,7 +18,7 @@
 		},
 		{
 			"ver": "1.2.0",
-			"desc": "added about info, release note and todo list."
+			"desc": "added auto-retrievd latest version info, release note and todo list."
 		},
 		{
 			"ver": "1.2.1",
