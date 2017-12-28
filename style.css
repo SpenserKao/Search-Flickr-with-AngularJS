@@ -290,9 +290,9 @@ li {
     display: inline;
 }
 
-.adjustable-eight {
-    width: 750px;
-    height: 200px;	
+.adjustable-height {
+	width: 750px;
+	height: 200px;	
 	overflow-x: auto;	
 	overflow-y: auto;
 }
