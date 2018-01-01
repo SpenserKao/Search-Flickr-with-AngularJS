@@ -111,7 +111,7 @@ As screenshot illustrated above, following properties of each image object item 
 |2| Move current optionally displayed "More details of selected image" area from top of page to the right of tags input area, hopefully achieving better user experience.| Y | 
 |3| "More details of selected image" area should only be exhibited when clicking an image of newly generated thumbnails. In other word, the area shouldn't be exhibited when a thumbnails is just generated until a click on an image of the thumbnails. Technology wise, whenever keywords/tags input area's content is adjusted, previously exhibited "More details of selected image" area should be unexhibited.| Y |
 |4| Add About info, release note and todo list.| Y |
-{5] FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
+|5| FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
 [1] https://run.plnkr.co/plunks/fDktQK/ <br/>
