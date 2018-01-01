@@ -62,10 +62,14 @@ protocal. But as the solution needs to be ported to online collaborating tool Co
  
 ## AngularJS
 Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
-   - ng-show - enables conditional display of selected image's details 
+   - ng-app - designates the root element of the application
+   - ng-controller - attaches a controller class to the view
+   - ng-model - binds view into model required by an input that specifies keywords (tags) for search
+   - ng-show - enables conditional display of selected image's details
+   - ng-switch - conditionally swaps DOM structure on your template based on a scope expression
+   - ng-click - specifies custom behavior when an element is clicked
    - ng-keyup - facilitates real-time search
    - ng-repeat - implements images thumbnail
-   - ng-model - binds view into model required by an input that specifies keywords (tags) for search
 
 ## HTML5
 Following semantic HTML5 elements have been in use:
@@ -110,7 +114,7 @@ As screenshot illustrated above, following properties of each image object item 
 {5] FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
-[1] https://run.plnkr.co/plunks/jF2JQTbH0828xJ6wjgme/ <br/>
+[1] https://run.plnkr.co/plunks/fDktQK/ <br/>
 [2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
 [3] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [4] http://code.angularjs.org/1.2.0/angular.js <br/>
