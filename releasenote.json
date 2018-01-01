@@ -26,7 +26,11 @@
 		},
 		{
 			"ver": "1.2.2",
-			"desc": "made height of area shared by release note, todo list and more details of selected image adjustable."
-		}				
+			"desc": "made adjustable height of area shared by release note, todo list and more details of selected image."
+		},
+		{
+			"ver": "1.2.3",
+			"desc": "differentiates even and odd rows of table inside shared area for better visual effect."
+		}					
 	]
 }

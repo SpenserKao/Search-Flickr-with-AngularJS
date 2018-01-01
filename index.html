@@ -55,13 +55,19 @@
 					  </fieldset>
 					</div>
 					
-					<div ng-switch="commonArea" class="adjustable-height">		
-						<div ng-switch-when="releaseNote">
+					<div ng-switch="commonArea" >		
+						<div ng-switch-when="releaseNote" class="adjustable-height"> 
 							<fieldset class="app-fieldset">
 								<legend class="app-legend">
 								  Release Note
 								</legend>
 								<table>
+									<thead>
+										<tr>
+											<th>ver.</th>
+											<th>description</th>
+										</tr>
+									</thead>
 									<tr ng-repeat="n in notes">
 										<td>{{n.ver}}</td>
 										<td>{{n.desc}}</td>
@@ -69,7 +75,7 @@
 								</table>
 							</fieldset>
 						</div>		
-						<div ng-switch-when="toDo" class="adjustable-height">
+						<div ng-switch-when="toDo" class="adjustable-height"> 
 							<fieldset class="app-fieldset">
 								<legend class="app-legend">
 								  ToDo
@@ -81,7 +87,7 @@
 								</table>
 							</fieldset>
 						</div>		
-						<div ng-switch-when="selectedImage"> <!-- ng-show="showSelectedImage" ng-switch-default -->
+						<div ng-switch-when="selectedImage" class="adjustable-height"> 
 							<fieldset class="app-fieldset">
 							<legend class="app-legend">
 							  More details of selected image
@@ -89,19 +95,19 @@
 							<table>
 								<tbody>
 									<tr>
-										<th>Title</th>
+										<th class="imagedetails">title</th>
 										<td>{{title}}</td>
 									</tr>
 									<tr>
-										<th>Author</th>
+										<th class="imagedetails">author</th>
 										<td>{{author}}</td>
 									</tr>
 									<tr>
-										<th>Tags</th>
+										<th class="imagedetails">tags</th>
 										<td>{{tags}}</td>
 									</tr>
 									<tr>
-										<th>Link to image of original resolution. (Right-click to open in new tab)</th>			
+										<th class="imagedetails">link to image of original resolution. (right-click to open in new tab)</th>			
 										<!-- <td><p id="link2image" ng-click="openNewTab({{image}})"><u>{{title}}</u></p></td> -->
 										<td><a href="{{image}}" onClick="openNewTab({{image}});">{{title}}</a></td>
 									</tr>
