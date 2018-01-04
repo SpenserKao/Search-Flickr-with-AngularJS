@@ -31,11 +31,10 @@
 		{
 			"ver": "1.2.3",
 			"desc": "differentiated even and odd rows of table inside shared area for better visual effect."
-		}
-		,
+		},
 		{
 			"ver": "1.2.4",
-			"desc": "improved user-friendliness: for a overflown HTML div tag, assure scrollbar's positioning to bottom."
+			"desc": "improved user-friendliness: for an overflown div shatred by release note, todo list and details of selected image, assure latest, important info shown on top."
 		}						
 	]
 }

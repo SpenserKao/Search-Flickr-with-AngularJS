@@ -73,29 +73,35 @@ appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$timeout', func
 		 $scope.tags = i.tags;
 		 $scope.image = i.link;
 		 $scope.commonArea = 'selectedImage';
-
-		 $timeout(function() {
-			// if overflown, make sure scroll bar is pointing to bottom
+	/*
+		$timeout(function() {
 			$scope.gotoBottom('imageDetails');			  
-		  },0);
+		  },0); 
+	*/
 	};
 		
 	// click commonArea: releaseNote or toDo list
 	$scope.selectCommonArea = function (c) {
 		$scope.commonArea = c;	
-
+	/* 	
 		$timeout(function() {
-			// if overflown, make sure scroll bar is pointing to bottom
 			$scope.gotoBottom(c);		  
-		  },0);		
+		 },0);
+	*/
 	}
 	
 	$scope.gotoBottom = function(id) {
+		/*
+		 * if the pertaining element is overflown, 
+		 * make sure scroll bar is pointing to bottom.
+		 */
 		var element = document.getElementById(id);		
 		element.scrollTop = element.scrollHeight - element.clientHeight;		
-/* 		console.log('gotoBottom: id=' + id);
+	/* 		
+		console.log('gotoBottom: id=' + id);
 		console.log(' element.scrollHeight=' + element.scrollHeight);
 		console.log(' element.clientHeight=' + element.clientHeight); 
-		console.log(' element.scrollTop=' + element.scrollTop);	 */
+		console.log(' element.scrollTop=' + element.scrollTop);	 
+	*/
 	};		
 }]);
