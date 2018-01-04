@@ -14,11 +14,9 @@
 			<h1>Search images with Flickr API v{{notes[notes.length-1].ver}}</h1>
 			<ul>
 				<li>
-					<!-- <a href="#releaseNote" onClick="commonArea='releaseNote';alert('releaseNote clicked');">Release Note</a> -->
 					<a href="#releaseNote" ng-click="selectCommonArea('releaseNote')">Release Note</a>
 				</li>
 				<li>
-					<!-- <a href="#ToDo" onClick="commonArea='toDo';alert('toDo clicked');">ToDo</a> -->
 					<a href="#ToDo" ng-click="selectCommonArea('toDo')">ToDo</a>
 				</li>
 			</ul>
@@ -55,13 +53,13 @@
 					  </fieldset>
 					</div>
 					
-					<div ng-switch="commonArea" >		
-						<div ng-switch-when="releaseNote" class="adjustable-height"> 
-							<fieldset class="app-fieldset">
+					<div ng-switch="commonArea" id="commonArea">		
+						<div ng-switch-when="releaseNote" class="adjustable-height" id="releaseNote"> 
+							<fieldset class="app-fieldset" onfocus="console.log('fieldset releasenote')">
 								<legend class="app-legend">
 								  Release Note
 								</legend>
-								<table>
+								<table onfocus="console.log('table releasenote')">
 									<thead>
 										<tr>
 											<th>ver.</th>
@@ -75,7 +73,7 @@
 								</table>
 							</fieldset>
 						</div>		
-						<div ng-switch-when="toDo" class="adjustable-height"> 
+						<div ng-switch-when="toDo" class="adjustable-height" id="toDo"> 
 							<fieldset class="app-fieldset">
 								<legend class="app-legend">
 								  ToDo
@@ -87,7 +85,7 @@
 								</table>
 							</fieldset>
 						</div>		
-						<div ng-switch-when="selectedImage" class="adjustable-height"> 
+						<div ng-switch-when="selectedImage" class="adjustable-height" id="imageDetails"> 
 							<fieldset class="app-fieldset">
 							<legend class="app-legend">
 							  More details of selected image

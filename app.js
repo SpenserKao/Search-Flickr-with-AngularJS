@@ -1,7 +1,5 @@
 var appFlickrAPI = angular.module('formFlickr', []);
-appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$window', function ($scope, $http, $window) {
-// appFlickrAPI.controller('FlickrController', ['$scope', '$http', function ($scope, $http) {	
-	// $scope.showSelectedImage = false;
+appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
 	$http.get("releasenote.json").success(function(data) {
 		$scope.notes = data.releasenote;
 	});
@@ -18,26 +16,11 @@ appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$window', funct
 	$scope.openNewTab = function(selectedImageURL) {
 	$scope.url = selectedImageURL;
 
-	// $scope.redirectToGoogle = function(){
-		// // $window.open(selectedImageURL, '_blank');
-		// $scope.url = selectedImageURL;
-	// };	
 	document.getElementById("link2image").style.color = "red";
 	window.open(selectedImageURL, '_blank');
 	// return true;
 	};
 
-	// $("#link2Image").click(function(e){
-		// e.preventDefault();//this will prevent the link trying to navigate to another page
-		// var href = $(this).attr("href");//get the href so we can navigate later
-		// $window.location = href;
-	// });
-
-	// $("#link2Image").on('click', function(event) {
-		// event.preventDefault();
-		// window.location = "http://www.google.com";
-	// });
-	 
 	$scope.search = function (searchCriteria) {
 	if (searchCriteria.tags === undefined || searchCriteria.tags.trim() === "") {
 	  searchCriteria.tags = null;
@@ -79,7 +62,6 @@ appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$window', funct
 		$scope.form.tags.$setValidity();
 		$scope.images = {};
 		$scope.searchCriteria = {};
-		// $scope.showSelectedImage = false;
 		$scope.commonArea='main';
 	};
 
@@ -91,10 +73,29 @@ appFlickrAPI.controller('FlickrController', ['$scope', '$http', '$window', funct
 		 $scope.tags = i.tags;
 		 $scope.image = i.link;
 		 $scope.commonArea = 'selectedImage';
+
+		 $timeout(function() {
+			// if overflown, make sure scroll bar is pointing to bottom
+			$scope.gotoBottom('imageDetails');			  
+		  },0);
 	};
 		
 	// click commonArea: releaseNote or toDo list
 	$scope.selectCommonArea = function (c) {
-		$scope.commonArea = c;
+		$scope.commonArea = c;	
+
+		$timeout(function() {
+			// if overflown, make sure scroll bar is pointing to bottom
+			$scope.gotoBottom(c);		  
+		  },0);		
 	}
+	
+	$scope.gotoBottom = function(id) {
+		var element = document.getElementById(id);		
+		element.scrollTop = element.scrollHeight - element.clientHeight;		
+/* 		console.log('gotoBottom: id=' + id);
+		console.log(' element.scrollHeight=' + element.scrollHeight);
+		console.log(' element.clientHeight=' + element.clientHeight); 
+		console.log(' element.scrollTop=' + element.scrollTop);	 */
+	};		
 }]);

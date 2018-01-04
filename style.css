@@ -174,10 +174,10 @@
   .adjustable-height {
     width: 750px;
     height: 200px;
-	overflow: auto;
-	/* display: flex; */
-	/* flex-direction: row-reverse;  */
-	/* flex-direction: column-reverse; */	
+	  overflow: auto;
+	/* display: run-in;  */
+	/* flex-direction: row-reverse;   */
+	/* flex-direction: column-reverse; */
   }
   
   tr:nth-child(odd) {
