@@ -4,6 +4,9 @@ An Application to Search Flickr with AngularJS as user interface building tool.
 # Execution
 The application currently is hosted by Plunkr, and a public Plunk URL [1] has been created for direct execution.
 
+# Code Review
+Two ways of code reviewing: Plnkr [8] or GitHub [9].
+
 # Supported web browsers
 The application has been tested with following browsers with side-effect:
    - Google Chrome, ver 62.0.3202.94 (64-bit)
@@ -114,10 +117,12 @@ As screenshot illustrated above, following properties of each image object item 
 |5| FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
-[1] https://run.plnkr.co/plunks/h9RSHRl2zOmJimzfKVwN/ <br/>
+[1] https://run.plnkr.co/plunks/g4eiPz/ <br/>
 [2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
 [3] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [4] http://code.angularjs.org/1.2.0/angular.js <br/>
 [5] https://api.flickr.com/services/feeds/photos_public.gne <br/>
 [6] https://code.angularjs.org/1.2.0/angular.js <br/>
-[7] https://www.sitepoint.com/load-flickr-photos-using-jsonapi
+[7] https://www.sitepoint.com/load-flickr-photos-using-jsonapi <br/>
+[8] https://embed.plnkr.co/g4eiPz/ <br/>
+[9] https://github.com/SpenserKao/Search-Flickr-with-AngularJS

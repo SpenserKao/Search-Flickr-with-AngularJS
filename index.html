@@ -9,124 +9,123 @@
   </head>
   <body>
 	<section class="row" ng-app="formFlickr" ng-controller="FlickrController">
-	  <!-- HTML5-specific element -->
 		<article class="col-md-push-1 col-md-11">
-			<h1>Search images with Flickr API v{{notes[notes.length-1].ver}}</h1>
-			<ul>
-				<li>
-					<a href="#releaseNote" ng-click="selectCommonArea('releaseNote')">Release Note</a>
-				</li>
-				<li>
-					<a href="#ToDo" ng-click="selectCommonArea('toDo')">ToDo</a>
-				</li>
-			</ul>
-			<br/>
-
-			<div class="container">				
-				<div class="container">
+		
+			<div class="back-solid-white"> 			
+				<div class="breadcrumb">
+					<h1>Search images with Flickr API v{{notes[notes.length-1].ver}}&nbsp;&nbsp;&nbsp;&nbsp;	
+						<span>
+							<ul>
+								<li>
+									<a href="#releaseNote" ng-click="selectCommonArea('releaseNote')">Release Note</a>
+								</li>
+								<li>
+									<a href="#ToDo" ng-click="selectCommonArea('toDo')">ToDo</a>
+								</li>
+							</ul>
+						</span>
+					</h1>
+				</div>
+			
+				<div class="app-container back-solid-white" style="position: fixed; top: 70px; left: 6px;">
+					<fieldset class="app-fieldset">
+					<legend class="app-legend">
+						AngularJS flavour
+					</legend>
+					<form name="form" class="validate-form">
+						<input id="searchCriteria"
+							ng-model="searchCriteria.tags"
+							ng-target="form.tags"
+							name="tags"
+							type="text"
+							title="required input"
+							placeholder="Enter key words (tags) separated by a comma."
+							ng-keyup="search(searchCriteria);document.getElementsByName('tags').focus();"
+							required />
+						<br />
+						Search Mode:
+						<input type="radio" name="SearchMode" value="any" />Any Tags
+						<input type="radio" name="SearchMode" value="all" checked />All Tags
+						<br />
+						<input type="button" class="btn btn-default" ng-click="resetForm(form);" value="Reset" />
+						<button type="submit" class="btn btn-primary" ng-click="search(searchCriteria);document.getElementsByName('tags').focus();">
+						Search Flicker
+						</button>
+					</form>
+					</fieldset>
+				</div>
 				
-					<div class="app-container">
+				<div ng-switch="commonArea" class="common-area">		
+					<div ng-switch-when="releaseNote"> 							
 						<fieldset class="app-fieldset">
-						<legend class="app-legend">
-						  AngularJS flavour
-						</legend>
-						<form name="form" class="validate-form">
-						  <input id="searchCriteria"
-								 ng-model="searchCriteria.tags"
-								 ng-target="form.tags"
-								 name="tags"
-								 type="text"
-								 title="required input"
-								 placeholder="Enter key words (tags) separated by a comma."
-								 ng-keyup="search(searchCriteria);document.getElementsByName('tags').focus();commonArea='main';"
-								 required />
-						  <br />
-						  Search Mode:
-						  <input type="radio" name="SearchMode" value="any" />Any Tags
-						  <input type="radio" name="SearchMode" value="all" checked />All Tags
-						  <br />
-						  <input type="button" class="btn btn-default" ng-click="resetForm(form);" value="Reset" />
-						  <button type="submit" class="btn btn-primary" ng-click="search(searchCriteria);document.getElementsByName('tags').focus();">
-							Search Flicker
-						  </button>
-						</form>
-					  </fieldset>
-					</div>
-					
-					<div ng-switch="commonArea" id="commonArea">		
-						<div ng-switch-when="releaseNote" class="adjustable-height" id="releaseNote"> 
-							<fieldset class="app-fieldset" onfocus="console.log('fieldset releasenote')">
-								<legend class="app-legend">
-								  Release Note
-								</legend>
-								<table onfocus="console.log('table releasenote')">
-									<thead>
-										<tr>
-											<th>ver.</th>
-											<th>description</th>
-										</tr>
-									</thead>
-									<tr ng-repeat="n in notes | orderBy : '-ver' ">
-										<td>{{n.ver}}</td>
-										<td>{{n.desc}}</td>
-									</tr>
-								</table>
-							</fieldset>
-						</div>		
-						<div ng-switch-when="toDo" class="adjustable-height" id="toDo"> 
-							<fieldset class="app-fieldset">
-								<legend class="app-legend">
-								  ToDo
-								</legend>							
-								<table>
-									<tr ng-repeat="t in todos">
-										<td>{{t}}</td>
-									</tr>
-								</table>
-							</fieldset>
-						</div>		
-						<div ng-switch-when="selectedImage" class="adjustable-height" id="imageDetails"> 
-							<fieldset class="app-fieldset">
 							<legend class="app-legend">
-							  More details of selected image
-							</legend>					
+								Release Note
+							</legend>
+							<table onfocus="console.log('table releasenote')">
+								<thead>
+									<tr>
+										<th>ver.</th>
+										<th>description</th>
+									</tr>
+								</thead>
+								<tr ng-repeat="n in notes | orderBy : '-ver' ">
+									<td>{{n.ver}}</td>
+									<td>{{n.desc}}</td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>		
+					<div ng-switch-when="toDo" class="common-area">
+						<fieldset class="app-fieldset">
+							<legend class="app-legend">
+								ToDo
+							</legend>							
 							<table>
-								<tbody>
-									<tr>
-										<th class="imagedetails">link to image of original resolution. (right-click to open in new tab)</th>			
-										<!-- <td><p id="link2image" ng-click="openNewTab({{image}})"><u>{{title}}</u></p></td> -->
-										<td><a href="{{image}}" onClick="openNewTab({{image}});">{{title}}</a></td>
-									</tr>
-									<tr>
-										<th class="imagedetails">title</th>
-										<td>{{title}}</td>
-									</tr>
-									<tr>
-										<th class="imagedetails">author</th>
-										<td>{{author}}</td>
-									</tr>
-									<tr>
-										<th class="imagedetails">tags</th>
-										<td>{{tags}}</td>
-									</tr>
-								</tbody>
-							</table> 
-							</fieldset>
-						</div>
+								<tr ng-repeat="t in todos">
+									<td>{{t}}</td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>		
+					<div ng-switch-when="selectedImage" class="common-area">
+						<fieldset class="app-fieldset" >
+						<legend class="app-legend">
+							More details of selected image
+						</legend>					
+						<table>
+							<tbody>
+								<tr>
+									<th class="imagedetails">link to image of original resolution. (right-click to open in new tab)</th>			
+									<td><a href="{{image}}" onClick="openNewTab({{image}});">{{title}}</a></td>
+								</tr>
+								<tr>
+									<th class="imagedetails">title</th>
+									<td>{{title}}</td>
+								</tr>
+								<tr>
+									<th class="imagedetails">author</th>
+									<td>{{author}}</td>
+								</tr>
+								<tr>
+									<th class="imagedetails">tags</th>
+									<td>{{tags}}</td>
+								</tr>
+							</tbody>
+						</table> 
+						</fieldset>
 					</div>
-				
+					<h3 ng-show="images.items.length > 0" class="thumbnails">
+						{{images.title}}
+					</h3>							
 				</div>
 			</div>
-			
-			<div id="message"></div>
-			<div id="images" class="app-container">
-			  <h3 ng-show="images.items.length > 0">
-				{{images.title}}
-			  </h3>
+
+			<div id="images" class="app-container" style="margin-top: 300px; margin-left: 6px;">
 			  <figure class="added-fig" ng-repeat="i in images.items">
-				<img class="added-img" src="{{i.media.m}}" ng-click="clickAnImage(i);"/> 			
+					<img class="added-img" src="{{i.media.m}}" ng-click="clickAnImage(i);"/> 			
 			  </figure>
 			</div>
+			
 		</article> 
 	</section>
   </body>

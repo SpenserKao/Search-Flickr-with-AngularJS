@@ -7,7 +7,7 @@
   }
   
   .added-fig {
-    margin: 5px;
+    margin: 4px;
     display: inline-block;
   }
   
@@ -37,6 +37,7 @@
     margin: 0;
     border-bottom: 20px;
     border: 1px solid #808080;
+	height: 196px;
   }
   
   .app-legend {
@@ -83,6 +84,7 @@
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid #DDDDDD;
+    border-radius: 4px;
   }
   
   input[type=text]:focus,
@@ -92,6 +94,7 @@
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid rgb(0, 255, 33);
+    border-radius: 6px;
   }
   
   input[type=text]:invalid {
@@ -100,6 +103,7 @@
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid rgb(255, 0, 0);
+    border-radius: 4px;
   }
   
   .code-pre {
@@ -129,8 +133,17 @@
   .container {
     display: flex;
   }
-  /* for thumbnail's style  */
   
+ .breadcrumb {
+	position: fixed; 
+	top: 6px; 
+	left: 6px; 
+	padding-bottom: 14px; 
+	background-color: rgba(255, 255, 255, 1); 
+	padding-bottom: 6px;	 
+ }
+
+  /* for thumbnail's style  */  
   img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -162,6 +175,7 @@
   }
   
   ul {
+	display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -171,13 +185,33 @@
     display: inline;
   }
   
+  h1 span 
+  { 
+	font-size:14px; 
+	font-style: italic;  
+	font-weight: normal;
+ }
+  
   .adjustable-height {
-    width: 750px;
+    width: 400px;
     height: 200px;
-	  overflow: auto;
+	/* left: 600px; */
+    overflow: auto;
+    border: 1px solid grey;    
 	/* display: run-in;  */
 	/* flex-direction: row-reverse;   */
 	/* flex-direction: column-reverse; */
+  }
+  
+  .common-area {
+	position: fixed; 
+	top: 70px; 
+	left: 284px;
+	display: inline-block;
+    width: 550px;
+    height: 200px;
+    overflow: auto;
+	background-color: rgba(255, 255, 255, 1);
   }
   
   tr:nth-child(odd) {
@@ -186,4 +220,16 @@
   
   tr:nth-child(even) {
     background: #ccffff;
+  }
+  
+  .back-solid-white {
+	background-color: rgba(255, 255, 255, 1);  
+  }
+  
+  .thumbnails {
+	  display: block; 
+	  position: fixed; 
+	  top: 260px; 
+	  left: 6px; 
+	  background-color: rgba(255, 255, 255, 1);
   }
