@@ -195,12 +195,8 @@
   .adjustable-height {
     width: 400px;
     height: 200px;
-	/* left: 600px; */
     overflow: auto;
     border: 1px solid grey;    
-	/* display: run-in;  */
-	/* flex-direction: row-reverse;   */
-	/* flex-direction: column-reverse; */
   }
   
   .common-area {

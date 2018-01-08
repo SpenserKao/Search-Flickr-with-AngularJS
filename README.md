@@ -5,35 +5,12 @@ An Application to Search Flickr with AngularJS as user interface building tool.
 The application currently is hosted by Plunkr, and a public Plunk URL [1] has been created for direct execution.
 
 # Code Review
-Two ways of code reviewing: Plnkr [8] or GitHub [9].
-
-# Supported web browsers
-The application has been tested with following browsers with side-effect:
-   - Google Chrome, ver 62.0.3202.94 (64-bit)
-   - Firefox, ver 57.0 (32-bit)
+Two ways of reviewing code: through Plnkr [2] or GitHub [3].
 
 # Technologies in use
 AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML define# Search Flickr with AngularJS
 An Application to Search Flickr with AngularJS as user interface building tool.
 
-# Execution
-Two ways to execute the application.
-
-## Directly at Plunkr
-A public Plunk URL [1] has been created for direct execution.
-
-## Indirectly through source codes
-Extract the package zip file from [2] into a working directory.
-Then open index.html with a web browser. 
-
-# Supported web browsers
-The application has been tested with following browsers without side-effect:
-   - Google Chrome, ver 62.0.3202.94 (64-bit)
-   - Firefox, ver 57.0 (32-bit)
-
-# Technologies in use
-AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, and AngularJS implements model and controller.
- 
 ## AngularJS
 Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
    - ng-show - enables conditional display of selected image's details 
@@ -59,48 +36,11 @@ Following CSS3 properties have been used:
 
 # Technical note
 ## Change of Protocal HTTP to HTTPS
-When the application was opened directly by web browsers, such as Firefox and Google Chrome, 
-the URLs of FlickrAPI[3] and referenced AngularJS lbrary [4] have no pronblem staying with "http" 
-protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, s view, and AngularJS implements model and controller.
+When the application was opened directly by web browsers, such as Firefox and Google Chrome, the URLs of FlickrAPI[4] and referenced AngularJS lbrary [5] has no pronblem staying with "http" protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, especially the latter demands much securer "https" protocol, we have to actuate such change onto two above mentioned URLs accordingly, resulting in [6] and [7] respectively.
  
-## AngularJS
-Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
-   - ng-app - designates the root element of the application
-   - ng-controller - attaches a controller class to the view
-   - ng-model - binds view into model required by an input that specifies keywords (tags) for search
-   - ng-show - enables conditional display of selected image's details
-   - ng-switch - conditionally swaps DOM structure on your template based on a scope expression
-   - ng-click - specifies custom behavior when an element is clicked
-   - ng-keyup - facilitates real-time search
-   - ng-repeat - implements images thumbnail
-
-## HTML5
-Following semantic HTML5 elements have been in use:
-   - article
-   - section
-   - figure
-
-## CSS3 
-Following CSS3 properties have been used:
-   - border-radius
-   - box-shadow
-   - transition
-   - -webkit-transition
-   - -moz-transition		
-   - -ms-transition	
-   - -o-transition	
-
-# Technical note
-## Change of Protocal HTTP to HTTPS
-When the application was opened directly by web browsers, such as Firefox and Google Chrome, 
-the URLs of FlickrAPI[3] and referenced AngularJS lbrary [4] have no pronblem staying with "http" 
-protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, 
-especially the latter demands much securer "https" protocol, we have to actuate such change 
-onto two above mentioned URLs accordingly, resulting in [5] and [6] respectively.
-
 ## Referring to a JSON Flickr Feed
 ![a sample of JSON Flickr Feed](aJsonFlickrFeed.jpg "a sample of JSON Flickr Feed") <br/>
-As screenshot illustrated above, following properties of each image object item of a received JSON Flickr feed [7] have been utilised:
+As screenshot illustrated above, following properties of each image object item of a received JSON Flickr feed [8] have been utilised:
    - title
    - link - points to underlying image of original size 
    - media - whose m property containing smaller size image is used to form thumbnail of images
@@ -117,12 +57,11 @@ As screenshot illustrated above, following properties of each image object item 
 |5| FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
-[1] https://run.plnkr.co/plunks/g4eiPz/ <br/>
-[2] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
-[3] http://api.flickr.com/services/feeds/photos_public.gne <br/>
-[4] http://code.angularjs.org/1.2.0/angular.js <br/>
-[5] https://api.flickr.com/services/feeds/photos_public.gne <br/>
-[6] https://code.angularjs.org/1.2.0/angular.js <br/>
-[7] https://www.sitepoint.com/load-flickr-photos-using-jsonapi <br/>
-[8] https://embed.plnkr.co/g4eiPz/ <br/>
-[9] https://github.com/SpenserKao/Search-Flickr-with-AngularJS
+[1] https://run.plnkr.co/plunks/WS9iDsF8bsdK8iMtn46u/ <br/>
+[2] https://embed.plnkr.co/WS9iDsF8bsdK8iMtn46u/ <br/>
+[3] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
+[4] http://api.flickr.com/services/feeds/photos_public.gne <br/>
+[5] http://code.angularjs.org/1.2.0/angular.js <br/>
+[6] https://api.flickr.com/services/feeds/photos_public.gne <br/>
+[7] https://code.angularjs.org/1.2.0/angular.js <br/>
+[8] https://www.sitepoint.com/load-flickr-photos-using-jsonapi
