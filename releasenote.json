@@ -38,7 +38,11 @@
 		},
 		{
 			"ver": "1.2.5",
-			"desc": "fixed position of common area while scrolling thumbnails."
-		}						
+			"desc": "fixed common area atop the screen while scrolling thumbnails."
+		},
+		{
+			"ver": "1.2.6",
+			"desc": "moved AngularJS from v1.2.0 back to 1.1.5 to enable thumbnail functionality under MS IE Edge (v11)."
+		}							
 	]
 }
