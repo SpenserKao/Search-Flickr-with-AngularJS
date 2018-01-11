@@ -1,15 +1,18 @@
 # Search Flickr with AngularJS
-An Application to Search Flickr with AngularJS as user interface building tool.
+An application to Search Flickr with AngularJS as user interface building tool.
 
 # Execution
 The application currently is hosted by Plunkr, and a public Plunk URL [1] has been created for direct execution.
+
+## Supported internet browsers
+Apart from Firefox and Chrome, the support to MS IE is conditional: version 9 and onward.
+MS IE versions' supportability has been verified through MS IE v11's _F12 Developer Tools_ as illustrated by <a href="MSIE-versionCompatibilityTest.jpg">MSIE-versionCompatibilityTest</a>
 
 # Code Review
 Two ways of reviewing code: through Plnkr [2] or GitHub [3].
 
 # Technologies in use
-AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML define# Search Flickr with AngularJS
-An Application to Search Flickr with AngularJS as user interface building tool.
+AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, and AngularJS implements model and controller.
 
 ## AngularJS
 Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
@@ -57,8 +60,8 @@ As screenshot illustrated above, following properties of each image object item 
 |5| FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
-[1] https://run.plnkr.co/plunks/WS9iDsF8bsdK8iMtn46u/ <br/>
-[2] https://embed.plnkr.co/WS9iDsF8bsdK8iMtn46u/ <br/>
+[1] https://run.plnkr.co/plunks/0WEBXtqzTzrJA0pedYPK/ <br/>
+[2] https://embed.plnkr.co/0WEBXtqzTzrJA0pedYPK/ <br/>
 [3] https://github.com/SpenserKao/Search-Flickr-with-AngularJS <br/>
 [4] http://api.flickr.com/services/feeds/photos_public.gne <br/>
 [5] http://code.angularjs.org/1.2.0/angular.js <br/>
