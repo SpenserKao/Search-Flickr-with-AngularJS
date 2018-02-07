@@ -15,7 +15,7 @@ Two ways of reviewing code: through Plnkr [2] or GitHub [3].
 AngularJS and HTML combined, the duet fulfill MVC (Model-View-Controller) pattern, where HTML defines view, and AngularJS implements model and controller.
 
 ## AngularJS
-Angular JS ver 1.2.0 has be utilised in this application, noteworthily following directives have been employed:
+Angular JS ver 1.2.0 has been utilised in this application, noteworthily following directives have been employed:
    - ng-show - enables conditional display of selected image's details 
    - ng-keyup - facilitates real-time search
    - ng-repeat - implements images thumbnail
