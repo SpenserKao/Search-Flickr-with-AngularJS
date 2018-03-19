@@ -1,5 +1,5 @@
 # Search Flickr with AngularJS
-An application to Search Flickr with AngularJS as user interface building tool.
+An application to Search Flickr through FlickrAPI, with AngularJS as user interface building tool.
 
 # Execution
 The application currently is hosted by Plunkr, and a public Plunk URL [1] has been created for direct execution.
