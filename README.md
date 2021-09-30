@@ -39,7 +39,7 @@ Following CSS3 properties have been used:
 
 # Technical note
 ## Change of Protocal HTTP to HTTPS
-When the application was opened directly by web browsers, such as Firefox and Google Chrome, the URLs of FlickrAPI [4] and referenced AngularJS lbrary [5] have no pronblem staying with "http" protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, especially the latter demands much securer "https" protocol, we have to actuate such change onto two above mentioned URLs accordingly, resulting in [6] and [7] respectively.
+When the application was opened directly by web browsers, such as Firefox and Google Chrome, the URLs of FlickrAPI [4] and referenced AngularJS library [5] have no pronblem staying with "http" protocal. But as the solution needs to be ported to online collaborating tool CodePen or Plunkr, especially the latter demands much securer "https" protocol, we have to actuate such change onto two above mentioned URLs accordingly, resulting in [6] and [7] respectively.
  
 ## Referring to a JSON Flickr Feed
 ![a sample of JSON Flickr Feed](aJsonFlickrFeed.jpg "a sample of JSON Flickr Feed") <br/>
@@ -57,7 +57,7 @@ As screenshot illustrated above, following properties of each image object item 
 |2| Move current optionally displayed "More details of selected image" area from top of page to the right of tags input area, hopefully achieving better user experience.| Y | 
 |3| "More details of selected image" area should only be exhibited when clicking an image of newly generated thumbnails. In other word, the area shouldn't be exhibited when a thumbnails is just generated until a click on an image of the thumbnails. Technology wise, whenever keywords/tags input area's content is adjusted, previously exhibited "More details of selected image" area should be unexhibited.| Y |
 |4| Add About info, release note and todo list.| Y |
-|5| FIx a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
+|5| Fix a Google Chrome-specific error that is associated with attemp of loading json file from same working directory: "Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."| N | 
 
 # Reference
 [1] https://run.plnkr.co/plunks/PrzsognJp15GjbVSHWmR/<br/>
